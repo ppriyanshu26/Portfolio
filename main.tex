@@ -1,0 +1,158 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{latexsym}
+\usepackage[margin=0.5in, top=0.4in, bottom=0.5in]{geometry}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{fontawesome}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[none]{hyphenat}
+
+\pagestyle{empty}
+\setlength{\tabcolsep}{0in}
+\titleformat{\section}
+  {\vspace{2pt}\scshape\raggedright\large}
+  {}{0em}{}[\vspace{2pt}\color{gray}\titlerule\vspace{-6pt}]
+
+
+
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}\item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}}
+\renewcommand{\labelitemii}{$\circ$}
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+  {\Huge \scshape Priyanshu Priyam} \\ \vspace{1pt}
+  \href{mailto:priyampriyanshu1126@gmail.com}{priyampriyanshu1126@gmail.com} $|$
+  \href{https://github.com/ppriyanshu26}{github.com/ppriyanshu26} $|$
+  \href{https://linkedin.com/in/ppriyanshu26}{linkedin.com/in/ppriyanshu26}
+\end{center}
+
+%-----------EDUCATION-----------------
+\section{Education}
+
+\vspace{-4pt}
+\begin{flushleft}
+  \hspace{1.5em}
+  \resumeSubheading
+    {B.Tech in Computer Science and Engineering}{Expected 2026}
+    {VIT Bhopal University, Bhopal}{CGPA: 8.67/10}
+\end{flushleft}
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+
+\vspace{-4pt}
+\hspace{1.5em}
+\begin{flushleft}
+  \textbf{Languages:} Python, Java, C++, Kotlin \\[6pt]
+  \textbf{Web:} HTML, CSS, Flask \\[6pt]
+  \textbf{Database:} MySQL, OracleDB, MongoDB \\[6pt]
+  \textbf{Tools/Libraries:} Pandas, Numpy, Matplotlib, Seaborn, Keras, VS Code, Git/GitHub, Android Studio
+\end{flushleft}
+
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+
+\noindent
+\textbf{DocDispatch}
+\href{https://github.com/yashpreeto7/DocDispatch}{\texttt{| LINK}} \\
+\textit{Android Developer, Backend Developer} \hfill \textbf{In Progress} \\[-8pt]
+
+\noindent\makebox[1.5em][l]{--}%
+\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
+Architecting an Android-based medical support platform enabling patients to report symptoms and health conditions via OTP-based authentication, capable of reliably serving $1M+$ verifications per month.} \\[0pt]
+
+\noindent\makebox[1.5em][l]{--}%
+\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
+Developing a scalable backend to manage regional segmentation of healthcare data, allowing for efficient retrieval of $1K+$ registered patient records with minimal latency.} \\[0pt]
+
+\noindent\makebox[1.5em][l]{--}%
+\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
+Designing dynamic role-based dashboards for patients and healthcare providers, enabling real-time triaging, prioritization, and resolution of cases while reducing manual case allocation time by $50\%$.} \\[4pt]
+
+
+
+\noindent
+\textbf{TOTP Desktop Authenticator}
+\href{https://github.com/ppriyanshu26/AuthPublic}{\texttt{| LINK}} \\
+\textit{Developer} \hfill \textbf{July 2025} \\[-8pt]
+
+\noindent\makebox[1.5em][l]{--}%
+\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
+Built a Tkinter-based desktop application to generate and copy TOTP codes directly on a computer, reducing average authentication time by $50\%$ compared to mobile retrieval.} \\[0pt]
+
+\noindent\makebox[1.5em][l]{--}%
+\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
+Integrated AES-256 encryption to securely store TOTP secrets, ensuring $100\%$ encrypted-at-rest storage and mitigating unauthorized access risks.} \\[0pt]
+
+\noindent\makebox[1.5em][l]{--}%
+\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
+Implemented a dual-factor decryption mechanism requiring both a PIN and passkey, hashing credentials and improving security resilience against brute-force attacks by nearly $90\%$.} \\[4pt]
+
+
+\noindent
+\textbf{Fraud App Detection}
+\href{https://github.com/ppriyanshu26/FraudApp}{\texttt{| LINK}} \\
+\textit{Android Developer, Flask Developer} \hfill \textbf{Feb 2025} \\[-8pt]
+
+\noindent\makebox[1.5em][l]{--}%
+\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
+Engineered an Android application that programmatically parses the Manifest XML of installed apps to detect suspicious or excessive permission usage, scanning $50+$ apps in under $5$ seconds per device.} \\[0pt]
+
+\noindent\makebox[1.5em][l]{--}%
+\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
+Built a Flask-powered backend server capable of processing $1{,}000+$ user-reported apps daily and returning live predictions for clickbait or malicious behavior with an accuracy of $92\%$ using trained models.} \\[0pt]
+
+\noindent\makebox[1.5em][l]{--}%
+\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
+Visualized analyzed permissions using custom UI elements, delivering real-time alerts that reduced false positives by $18\%$ and improved user trust ratings by $25\%$.} \\[-4pt]
+
+
+
+
+%-----------RELEVANT COURSES-----------------
+\section{Relevant Coursework}
+  \begin{itemize}
+    \item DSA, Operating Systems, DBMS, Computer Networks, OOPs, Parallel and Distributed Computing, Data Science, Cyber Security, Statistics, Web Development
+  \end{itemize}
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+  \begin{itemize}
+    \item Achieved a perfect score of \textbf{100/100} in the High Performing Coding Course in Data Science on iamNeo platform.
+  \end{itemize}
+
+
+%-----------PERSONAL DETAILS-----------------
+\section{Personal Details}
+\vspace{-4pt}
+\hspace{1.5em}
+\begin{flushleft}
+  \textbf{Languages:} Hindi, English, Maithili \\[6pt]
+  \textbf{Soft Skills:} Communication, Teamwork, Problem Solving, Time Management \\[6pt]
+  \textbf{Interests:} Algorithms, Android, Open Source, Cyber Security
+\end{flushleft}
+
+\end{document}
