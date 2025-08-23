@@ -12,10 +12,10 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_ogbx4ih",  // Replace with your EmailJS Service ID
-        "template_vrwf8l3",  // Replace with your EmailJS Template ID
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,   // from .env.local
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,  // from .env.local
         form.current,
-        "sI_tPzA7HuMPUG9u3"  // Replace with your EmailJS Public Key
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY    // from .env.local
       )
       .then(
         () => {
@@ -98,7 +98,7 @@ const Contact = () => {
             required
             className="w-full p-3 rounded-md bg-[#131025] text-white border border-gray-600 focus:outline-none focus:border-purple-500"
           />
-          
+
           {/* Send Button */}
           <button
             type="submit"
