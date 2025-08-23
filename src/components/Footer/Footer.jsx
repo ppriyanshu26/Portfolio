@@ -55,7 +55,7 @@ const Footer = () => {
             },
             {
               icon: <FaUserGraduate />,
-              link: "https://codolio.com/ppriyanshu26", // replace with your Codolio profile
+              link: "https://codolio.com/profile/ppriyanshu26", // replace with your Codolio profile
             },
           ].map((item, index) => (
             <a
