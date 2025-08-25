@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ppriyanshu26.online/sitemap.xml
