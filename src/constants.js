@@ -27,7 +27,7 @@ import ggiaLogo from './assets/education_logo/ggia.png';
 import vitLogo from './assets/education_logo/vit.png';
 
 // Project Section Logo's
-import pythonAppLogo from './assets/work_logo/python.png';
+import totpAppLogo from './assets/work_logo/totp.png';
 import mobileAppLogo from './assets/work_logo/mobile.png';
 
 
@@ -123,10 +123,10 @@ export const projects = [
     title: "TOTP Desktop Authenticator",
     description:
       "Independently developed a Tkinter-based desktop TOTP Authenticator, integrating AES-256 encrypted secret storage and dual-factor decryption for enhanced security. Optimized for usability, it reduces authentication time by 50% while significantly strengthening resilience against brute-force attacks.",
-    image: pythonAppLogo,
-    tags: ["Python", "Tkinter", "AES", "Hashing", "Access Token"],
+    image: totpAppLogo,
+    tags: ["Python", "Tkinter", "AES", "Hashing", "Access Token", "TOTP Authenticator", "QR Generator", "QR Scanner", "Credential Manager"],
     github: "https://github.com/ppriyanshu26/AuthPublic",
-    webapp: "",
+    webapp: "https://drive.google.com/file/d/1ebZfiX-PvqSI_XzsmAcSP-zig7Pa5hsd/view?usp=sharing",
   },
   {
     id: 2,
