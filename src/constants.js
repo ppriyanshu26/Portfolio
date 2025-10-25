@@ -29,6 +29,7 @@ import vitLogo from './assets/education_logo/vit.png';
 // Project Section Logo's
 import totpAppLogo from './assets/work_logo/totp.png';
 import mobileAppLogo from './assets/work_logo/mobile.png';
+import eComLogo from './assets/work_logo/eCom.png';
 
 
 export const SkillsInfo = [
@@ -137,5 +138,15 @@ export const projects = [
     tags: ["Android", "Java", "Manifest XML", "API"],
     github: "https://github.com/ppriyanshu26/FraudApp",
     webapp: "",
+  },
+  {
+    id: 3,
+    title: "eCommerce Product Recommender",
+    description:
+      "A modern, intelligent product recommendation system that leverages machine learning and AI to provide personalized shopping experiences. The system analyzes user behavior (views, cart additions, purchases) and uses TF-IDF-based content filtering combined with OpenAI's GPT to generate contextual, human-friendly explanations for each recommendation.",
+    image: eComLogo,
+    tags: ["API", "Flask", "JSON", "MongoDB", "ReactJS", "Scikit-Learn", "OpenAI"],
+    github: "https://github.com/ppriyanshu26/eCommerce-Product-Recommender",
+    webapp: "https://drive.google.com/file/d/1qvbiTN1WXfnh4INcK6GCqYfLnW0UbkZk/view?usp=sharing",
   },
 ];  
