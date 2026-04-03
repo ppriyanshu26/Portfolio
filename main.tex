@@ -9,7 +9,7 @@
 \usepackage{fontawesome}
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
-\usepackage{lmodern}
+\usepackage{mathptmx}
 \usepackage[none]{hyphenat}
 
 \pagestyle{empty}
@@ -50,7 +50,7 @@
 \end{center}
 
 %-----------EDUCATION-----------------
-\vspace{-4pt}
+\vspace{-8pt}
 \section{Education}
 
 \vspace{-4pt}
@@ -58,20 +58,28 @@
   \hspace{1.5em}
   \resumeSubheading
     {B.Tech in Computer Science and Engineering}{2022 - 2026}
-    {VIT Bhopal University, Bhopal}{CGPA: 8.68/10}
+    {Vellore Institute of Technology}{CGPA: 8.68/10}
+\vspace{-6pt}
+  \resumeSubheading
+    {XII-PCM (CBSE)}{2022}
+    {Gyan Ganga International Academy, Bhopal}{Percentage: 85.8\%}
+\vspace{-6pt}
+  \resumeSubheading
+    {X (CBSE)}{2020}
+    {St. Mary's Convent Sr. Sec. School, Bhopal}{Percentage: 95.2\%}
 \end{flushleft}
 
 %-----------TECHNICAL SKILLS-----------------
-\vspace{-4pt}
+\vspace{-6pt}
 \section{Technical Skills}
 
 \vspace{-4pt}
 \hspace{1.5em}
 \begin{flushleft}
-  \textbf{Languages:} Python, Java, Dart \\[6pt]
-  \textbf{Web:} HTML, CSS, Flask \\[6pt]
-  \textbf{Database:} MySQL, OracleDB \\[6pt]
-  \textbf{Tools/Frameworks:} Android, Flutter, NLP, Git/GitHub, AWS, NIST
+  \textbf{Languages:} Python, Java, Dart \\[4pt]
+  \textbf{Web:} HTML, CSS, Flask \\[4pt]
+  \textbf{Database:} MySQL, OracleDB \\[4pt]
+  \textbf{Tools/Frameworks:} Android, Flutter, Git/GitHub, Scikit-Learn, NLP, Firebase, AWS
 \end{flushleft}
 
 
@@ -81,17 +89,36 @@
 \section{Projects}
 
 \noindent
+\textbf{CipherAuth}
+\href{https://github.com/ppriyanshu26/CipherAuth-Flutter}{\texttt{| LINK}} \\
+\textit{Flutter Developer, Security Engineer} \hfill \textbf{March 2026} \\[-8pt]
+
+\noindent\makebox[1.5em][l]{--}%
+\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
+Built a secure, cross-platform \textbf{TOTP} (Time-based One-Time Password) authenticator application using Flutter, delivering encrypted token management across Android and Windows with seamless performance and consistency.} \\[0pt]
+
+\noindent\makebox[1.5em][l]{--}%
+\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
+Implemented AES-GCM encrypted local storage secured by a master password, ensuring fully offline data protection and no cloud dependency; successfully published on \href{https://apps.microsoft.com/detail/9NS2R9NTRF2Z}{\textbf{Microsoft Store}} and \textbf{Google Play Store}.} \\[0pt]
+
+
+\noindent\makebox[1.5em][l]{--}%
+\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
+Integrated QR-based account provisioning, secure export/import functionality, real-time search, and peer-to-peer \textbf{encrypted device sync}, enabling secure multi-device credential management within the same network.} \\[4pt]
+
+
+\noindent
 \textbf{DocDispatch}
 \href{https://github.com/ppriyanshu26/DocDispatch}{\texttt{| LINK}} \\
 \textit{Flutter Developer, Firebase Admin} \hfill \textbf{January 2026} \\[-8pt]
 
 \noindent\makebox[1.5em][l]{--}%
 \parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
-Engineered an Android healthcare platform enabling patients to report conditions via OTP-based authentication, capable of handling $1M+$ secure verifications monthly with robust reliability and low-latency data processing.} \\[0pt]
+Designed an Android healthcare platform enabling patients to report conditions via \textbf{OTP-based authentication} using Firebase, capable of handling $1M+$ secure verifications monthly with robust reliability and low-latency.} \\[0pt]
 
 \noindent\makebox[1.5em][l]{--}%
 \parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
-Constructed a scalable backend for healthcare data segmentation, supporting retrieval of $1K+$ registered patient records efficiently, enhancing system performance, accessibility, and minimizing query latency across regional clusters.} \\[0pt]
+Constructed a scalable backend in \textbf{Java Springboot} for healthcare data segmentation, supporting retrieval of $1K+$ registered patient records efficiently, enhancing system performance, accessibility and reliability.} \\[0pt]
 
 \noindent\makebox[1.5em][l]{--}%
 \parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
@@ -100,57 +127,39 @@ Devised state-specific dashboards for hospitals, streamlining appointments, prio
 \noindent
 \textbf{Windows Password Autofill}
 \href{https://github.com/ppriyanshu26/Password}{\texttt{| LINK}} \\
-\textit{System Tools Developer, Python Developer} \hfill \textbf{December 2025} \\[-8pt]
+\textit{Python Developer, System Tools Developer} \hfill \textbf{December 2025} \\[-8pt]
 
 \noindent\makebox[1.5em][l]{--}%
 \parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
-Engineered a Windows-native autofill utility using Win32API and UIAutomation, implementing context-aware hotkey triggers to detect active windows and automate multi-field credential entry, reducing login latency by approximately $70\%$.} \\[0pt]
+Engineered a \textbf{Windows-native autofill utility} using Win32API and UIAutomation, implementing context-aware hotkey triggers to detect active windows and automate multi-field credential entry, reducing login latency.} \\[0pt]
 
 \noindent\makebox[1.5em][l]{--}%
 \parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
-Architected a high-security storage layer utilizing AES-GCM authenticated encryption and Windows Keyring for master-key management; integrated secure hashing to ensure cryptographic integrity and $100\%$ protection of locally stored authentication secrets.} \\[0pt]
+Architected a high-security storage layer utilizing AES-GCM authenticated encryption; integrated secure \textbf{hashing} to ensure cryptographic integrity and $100\%$ protection of locally stored authentication secrets.} \\[0pt]
 
 \noindent\makebox[1.5em][l]{--}%
 \parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
-Developed a robust integrity-check suite via custom Batch scripting that executes 5 key validations, including automated path detection and SHA fingerprint verification, ensuring environment consistency.} \\[4pt]
-
-\noindent
-\textbf{App Sentiment Analyzer} 
-\href{https://github.com/ppriyanshu26/SentimentAnalyzer}{\texttt{| LINK}} \\
-\textit{Data Scientist, Flask Developer} \hfill \textbf{October 2025} \\[-8pt]
-
-\noindent\makebox[1.5em][l]{--}%
-\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
-Built a fully interactive Web and Flask-based application capable of fetching the latest $100$ Play Store reviews, performing real-time sentiment analysis, and computing an overall score to provide actionable insights.} \\[-2pt]
-
-\noindent\makebox[1.5em][l]{--}%
-\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
-Integrated a pre-trained sentiment analysis model into a robust Flask backend, dynamically processing reviews, computing a $5$-point rating, and efficiently handling multiple user requests for rapid, data-driven assessment.} \\[-2pt]
-
-\noindent\makebox[1.5em][l]{--}%
-\parbox[t]{\dimexpr\linewidth-1.5em\relax}{%
-Crafted responsive frontend templates using HTML, CSS, and JavaScript to display live sentiment scores, review summaries, and interactive visual analytics, enhancing user experience and ensuring device compatibility.} \\[4pt]
+Developed a robust \textbf{integrity-check suite} via custom Batch scripting that executes 5 key validations, including automated path detection and SHA fingerprint verification, ensuring environment consistency.} \\[4pt]
 
 
 %-----------RELEVANT COURSES-----------------
 \vspace{-4pt}
 \section{Relevant Coursework}
   \begin{itemize}
-    \item DSA, Operating Systems, DBMS, Mobile Development, Computer Networks, OOPs, Parallel and Distributed Computing, Data Science, Cyber Security, Statistics, Web Development, AWS Practitioner
+    \item DSA, Operating Systems, DBMS, Mobile Development, Computer Networks, OOPs, Parallel and Distributed Computing, Data Science, Cyber Security, Probability and Statistics, Web Development, AWS Practitioner
   \end{itemize}
 
 
 %-----------ACHIEVEMENTS-----------------
+\vspace{-4pt}
 \section{Achievements}
 \begin{itemize}
   \setlength{\itemsep}{2pt}   % space between items
   \setlength{\parskip}{0pt}
   \setlength{\parsep}{0pt}
   \item Achieved a perfect score of 100/100 in the High Performing Coding Course in Data Science on iamNeo platform.
-  \item Secured A grade in Cyber Security Analyst Course on IBM-Adroit platform.
   \item Bagged SQL proficiency badge on LeetCode.
 \end{itemize}
-
 
 
 %-----------CERTIFICATIONS-----------------
@@ -160,19 +169,19 @@ Crafted responsive frontend templates using HTML, CSS, and JavaScript to display
   \setlength{\itemsep}{2pt}   % space between items
   \setlength{\parskip}{0pt}
   \setlength{\parsep}{0pt}
-    \item \href{https://vit162.examly.io/certificate/U2FsdGVkX1%2FGbYKjS9DZ8Xo8HPc6ePhKpo1V9zRP3RI%3D}{\textbf{HPC in Data Science}} - iamNeo 
+    \item \href{https://vit162.examly.io/certificate/U2FsdGVkX1%2FGbYKjS9DZ8Xo8HPc6ePhKpo1V9zRP3RI%3D}{\textbf{Data Science}} - iamNeo 
     \item \href{https://courses.ibmcep.cognitiveclass.ai/certificates/c193fe199bc94fb79aa6c794c9fa4cbe}{\textbf{Cyber Security Analyst}} - IBM Career Education Program 
     \item \href{https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs17/Course/NPTEL24CS17S35290010730645933.pdf}{\textbf{Cloud Computing}} - IIT-KGP
 \end{itemize}
 
 
 %-----------PERSONAL DETAILS-----------------
-\section{Personal Details}
 \vspace{-4pt}
+\section{Personal Details}
 \hspace{1.5em}
 \begin{flushleft}
-  \textbf{Languages:} Hindi, English, Maithili \\[6pt]
-  \textbf{Interests:} Cross Platform, Open Source, Cyber Security, Big Data
+  \textbf{Languages:} Hindi, English \\[4pt]
+  \textbf{Interests:} Cross Platform, Open Source, Cyber Security
 \end{flushleft}
 
 \end{document}
