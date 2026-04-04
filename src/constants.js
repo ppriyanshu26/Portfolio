@@ -2,8 +2,6 @@
 import androidLogo from './assets/tech_logo/android.png';
 import androidsLogo from './assets/tech_logo/androidstudio.png';
 import awsLogo from './assets/tech_logo/aws.png';
-import cLogo from './assets/tech_logo/c.png';
-import cppLogo from './assets/tech_logo/cpp.png';
 import cssLogo from './assets/tech_logo/css.png';
 import firebaseLogo from './assets/tech_logo/firebase.png';
 import flaskLogo from './assets/tech_logo/flask.png';
@@ -12,14 +10,15 @@ import githubLogo from './assets/tech_logo/github.png';
 import htmlLogo from './assets/tech_logo/html.png';
 import javaLogo from './assets/tech_logo/java.png';
 import jsLogo from './assets/tech_logo/javascript.png';
-import kotlinLogo from './assets/tech_logo/kotlin.png';
 import mongodbLogo from './assets/tech_logo/mongodb.png';
 import mysqlLogo from './assets/tech_logo/mysql.png';
 import oracleLogo from './assets/tech_logo/oracledb.png';
 import pythonLogo from './assets/tech_logo/python.png';
 import sqlLogo from './assets/tech_logo/sql.png';
-import vercelLogo from './assets/tech_logo/vercel.png';
 import vscodeLogo from './assets/tech_logo/vscode.png';
+import flutterLogo from './assets/tech_logo/flutter.png';
+import DartLogo from './assets/tech_logo/dart.png';
+import lambdaLogo from './assets/tech_logo/lambda.png';
 
 // Education Section Logo's
 import stmLogo from './assets/education_logo/stm.png';
@@ -39,21 +38,22 @@ export const SkillsInfo = [
   {
     title: 'Frontend',
     skills: [
-      { name: 'HTML', logo: htmlLogo },
-      { name: 'CSS', logo: cssLogo },
-      { name: 'JavaScript', logo: jsLogo },
       { name: 'Tkinter', logo: pythonLogo },
       { name: 'Android', logo: androidLogo },
+      { name: 'HTML', logo: htmlLogo },
+      { name: 'CSS', logo: cssLogo },
+      { name: 'JS', logo: jsLogo },
     ],
   },
   {
     title: 'Backend',
     skills: [
       { name: 'MySQL', logo: mysqlLogo },
-      { name: 'OracleDB', logo: oracleLogo },
+      { name: 'Oracle', logo: oracleLogo },
       { name: 'Firebase', logo: firebaseLogo },
       { name: 'Flask', logo: flaskLogo },
-      { name: 'MongoDB', logo: mongodbLogo },
+      { name: 'Lambda', logo: lambdaLogo },
+      { name: 'Mongo', logo: mongodbLogo },
     ],
   },
   {
@@ -62,7 +62,7 @@ export const SkillsInfo = [
       { name: 'Python', logo: pythonLogo },
       { name: 'Java', logo: javaLogo },
       { name: 'SQL', logo: sqlLogo },
-      { name: 'Dart', logo: androidLogo },
+      { name: 'Dart', logo: DartLogo },
     ],
   },
   {
@@ -72,9 +72,8 @@ export const SkillsInfo = [
       { name: 'GitHub', logo: githubLogo },
       { name: 'VS Code', logo: vscodeLogo },
       { name: 'Android Studio', logo: androidsLogo },
-      { name: 'Vercel', logo: vercelLogo },
       { name: 'AWS', logo: awsLogo },
-      
+      { name: 'Flutter', logo: flutterLogo },
     ],
   },
 ];
