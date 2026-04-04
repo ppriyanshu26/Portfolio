@@ -42,10 +42,11 @@ const About = () => {
           </h3>
           {/* About Me Paragraph */}
           <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
-            I am a passionate final-year Computer Science student with hands-on experience in 
-            building Android applications, creating and testing APIs, and working with 
-            relational database systems. I focus on delivering reliable, user-friendly, and 
-            performance-optimized applications through my projects and academic work.
+            A Software Engineer with hands-on experience in building 
+            Android applications, creating and testing APIs, and working with 
+            relational database systems. I focus on delivering reliable, 
+            user-friendly, and performance-optimized applications through my 
+            projects and academic work.
           </p>
           {/* Resume Button */}
           <a

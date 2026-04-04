@@ -28,8 +28,11 @@ import vitLogo from './assets/education_logo/vit.png';
 
 // Project Section Logo's
 import totpAppLogo from './assets/work_logo/totp.png';
-import mobileAppLogo from './assets/work_logo/mobile.png';
+import docAppLogo from './assets/work_logo/docdispatch.png';
 import eComLogo from './assets/work_logo/eCom.png';
+import passAppLogo from './assets/work_logo/pass.png';
+import fraudAppLogo from './assets/work_logo/fraudApp.png';
+import cipherAppLogo from './assets/work_logo/cipherWebsite.png';
 
 
 export const SkillsInfo = [
@@ -59,9 +62,7 @@ export const SkillsInfo = [
       { name: 'Python', logo: pythonLogo },
       { name: 'Java', logo: javaLogo },
       { name: 'SQL', logo: sqlLogo },
-      { name: 'Kotlin', logo: kotlinLogo },
-      { name: 'C', logo: cLogo },
-      { name: 'C++', logo: cppLogo },
+      { name: 'Dart', logo: androidLogo },
     ],
   },
   {
@@ -84,7 +85,7 @@ export const education = [
     img: vitLogo,
     school: "VIT Bhopal University, Sehore",
     date: "Oct 2022 - July 2026 (Expected)",
-    grade: "8.68 CGPA (6th Sem)",
+    grade: "8.68 CGPA (7th Sem)",
     desc: "Currently in my final year of B.Tech in Computer Science and Engineering at VIT, with a strong foundation in programming, software development, and core computer science concepts. My coursework covers Data Structures, Algorithms, OOPs, DBMS, Web Development, and Software Engineering, along with participation in workshops and technical events that have strengthened my practical skills.",
     degree: "Bachelor of Technology - CSE",
   },
@@ -111,36 +112,56 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "DocDispatch",
+    title: "CipherAuth",
     description:
-      "Contributing as an Android and Backend Developer in a collaborative team for DocDispatch, an Android-based medical support platform. I work on OTP-based authentication, scalable backend architecture, and role-based dashboards to streamline patient–provider interactions and healthcare data management.",
-    image: mobileAppLogo,
-    tags: ["HTML", "CSS", "JavaScript", "TailwindCSS", "React JS", "ML", "Android", "API", "SQL"],
-    github: "https://github.com/yashpreeto7/DocDispatch",
-    webapp: "",
+      "Architected a Flutter-based cross-platform TOTP Authenticator, integrating AES-GCM encrypted storage for enhanced security. Optimized for usability across Android and Windows, and needs minimal code changes to be optimized for iOS, macOS and Linux distros as well. Integrated a local sync feature to securely sync encrypted credentials with other devices on the same network and with the same password.",
+    image: totpAppLogo,
+    tags: ["Flutter", "AES-GCM", "Hashing", "QR Generator", "QR Scanner", "Local Sync", "Cross-Platform"],
+    github: "https://github.com/ppriyanshu26/CipherAuth-Flutter",
+    webapp: "https://apps.microsoft.com/detail/9NS2R9NTRF2Z",
   },
   {
     id: 1,
-    title: "TOTP Desktop Authenticator",
+    title: "DocDispatch",
     description:
-      "Independently developed a Tkinter-based desktop TOTP Authenticator, integrating AES-256 encrypted secret storage and dual-factor decryption for enhanced security. Optimized for usability, it reduces authentication time by 50% while significantly strengthening resilience against brute-force attacks.",
-    image: totpAppLogo,
-    tags: ["Python", "Tkinter", "AES", "Hashing", "Access Token", "TOTP Authenticator", "QR Generator", "QR Scanner", "Credential Manager"],
-    github: "https://github.com/ppriyanshu26/AuthPublic",
-    webapp: "https://drive.google.com/file/d/1ebZfiX-PvqSI_XzsmAcSP-zig7Pa5hsd/view?usp=sharing",
+      "Contributing as an Android and Backend Developer in a collaborative team for DocDispatch, an Android-based medical support platform. I worked on OTP-based authentication, scalable backend architecture, and role-based dashboards to streamline patient–provider interactions and healthcare data management.",
+    image: docAppLogo,
+    tags: ["HTML", "CSS", "JavaScript", "TailwindCSS", "React JS", "ML", "Android", "API", "SQL"],
+    github: "https://github.com/ppriyanshu26/DocDispatch",
+    webapp: "",
   },
   {
     id: 2,
+    title: "Windows Autofill",
+    description:
+      "A Windows-only password manager built with Python and Tkinter that stores credentials locally on-device using AES-GCM encryption. It listens for a global hotkey and opens a popup showing saved credentials, with one-click autofill support for both web browsers and native Windows applications.",
+    image: passAppLogo,
+    tags: ["Python", "Tkinter", "Password Manager","AES-GCM", "Hashing"],
+    github: "https://github.com/ppriyanshu26/Password",
+    webapp: "",
+  },
+  {
+    id: 4,
+    title: "Cipher Website",
+    description:
+      "A simple Flask powered website for the generating ciphertext and decrypting back to plaintext using AES-GCM mechanism to ensure integrity.",
+    image: cipherAppLogo,
+    tags: ["HTML", "CSS", "JS", "Python", "Flask", "AES-GCM"],
+    github: "https://github.com/ppriyanshu26/Cipher",
+    webapp: "https://cipher.ppriyanshu26.online",
+  },
+  {
+    id: 4,
     title: "Fraud App Detection",
     description:
       "Collaboratively built an Android + Flask-based fraud app detection system. I developed the Flask API to handle heavy ML operations, enabling 1,000+ daily reports with 92% accuracy, while also engineering Android-side XML parsing and UI visualizations.",
-    image: mobileAppLogo,
-    tags: ["Android", "Java", "Manifest XML", "API"],
+    image: fraudAppLogo,
+    tags: ["Android", "Java", "XML", "API", "Flask", "ML", "Scikit-Learn"],
     github: "https://github.com/ppriyanshu26/FraudApp",
     webapp: "",
   },
   {
-    id: 3,
+    id: 5,
     title: "eCommerce Product Recommender",
     description:
       "A modern, intelligent product recommendation system that leverages machine learning and AI to provide personalized shopping experiences. The system analyzes user behavior (views, cart additions, purchases) and uses TF-IDF-based content filtering combined with OpenAI's GPT to generate contextual, human-friendly explanations for each recommendation.",
