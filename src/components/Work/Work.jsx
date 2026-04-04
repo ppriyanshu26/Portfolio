@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { projects } from "../../constants";
 import toast from "react-hot-toast";
 
@@ -13,6 +13,17 @@ const Work = () => {
     setSelectedProject(null);
   };
 
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setSelectedProject(null);
+      }
+    };
+
+    window.addEventListener("keydown", handleEscape);
+    return () => window.removeEventListener("keydown", handleEscape);
+  }, []);
+
   return (
     <section
       id="work"
@@ -20,9 +31,9 @@ const Work = () => {
     >
       {/* Section Title */}
       <div className="text-center mb-16">
-        <h2 className="text-4xl font-bold text-white">PROJECTS</h2>
-        <div className="w-32 h-1 bg-purple-500 mx-auto mt-4"></div>
-        <p className="text-gray-400 mt-4 text-lg font-semibold">
+        <h2 className="section-title">PROJECTS</h2>
+        <div className="accent-line"></div>
+        <p className="section-subtitle">
           A showcase of the projects I have worked on, highlighting my skills
           and experience in various technologies
         </p>
@@ -34,7 +45,7 @@ const Work = () => {
           <div
             key={project.id}
             onClick={() => handleOpenModal(project)}
-            className="border border-white bg-gray-900 backdrop-blur-md rounded-2xl shadow-2xl overflow-hidden cursor-pointer hover:shadow-purple-500/50 hover:-translate-y-2 transition-transform duration-300"
+            className="glass-card rounded-2xl overflow-hidden cursor-pointer hover:-translate-y-2 transition-all duration-300 hover:shadow-[0_18px_35px_rgba(20,184,166,0.25)]"
           >
             <div className="p-4">
               <img
@@ -47,15 +58,12 @@ const Work = () => {
               <h3 className="text-2xl font-bold text-white mb-2">
                 {project.title}
               </h3>
-              <p className="text-gray-500 mb-4 pt-4 line-clamp-3">
+              <p className="text-[#a4bdd5] mb-4 pt-4 line-clamp-3 leading-relaxed">
                 {project.description}
               </p>
               <div className="mb-4">
                 {project.tags.map((tag, index) => (
-                  <span
-                    key={index}
-                    className="inline-block bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1 mr-2 mb-2"
-                  >
+                  <span key={index} className="chip">
                     {tag}
                   </span>
                 ))}
@@ -68,16 +76,25 @@ const Work = () => {
       {/* Modal Container */}
       {selectedProject && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-90 p-4"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-[#010912]/90 p-4"
           onClick={handleCloseModal} // close if overlay clicked
         >
           <div
-            className="bg-gray-900 rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative"
+            className="glass-card rounded-xl shadow-2xl lg:w-full w-[90%] max-w-3xl overflow-hidden relative"
             onClick={(e) => e.stopPropagation()} // prevent close when clicking inside modal
           >
+            <button
+              type="button"
+              onClick={handleCloseModal}
+              aria-label="Close project modal"
+              className="absolute top-3 right-3 z-20 h-9 w-9 rounded-full bg-[#0b2236]/90 border border-[#5f7d9c] text-[#dce8f6] hover:text-white hover:bg-[#12314a] transition-colors"
+            >
+              X
+            </button>
+
             {/* Modal Content */}
             <div className="flex flex-col">
-              <div className="w-full flex justify-center bg-gray-900 px-4">
+              <div className="w-full flex justify-center bg-[#0d2237] px-4">
                 <img
                   src={selectedProject.image}
                   alt={selectedProject.title}
@@ -88,15 +105,12 @@ const Work = () => {
                 <h3 className="lg:text-3xl font-bold text-white mb-4 text-md">
                   {selectedProject.title}
                 </h3>
-                <p className="text-gray-400 mb-6 lg:text-base text-xs">
+                <p className="text-[#bad0e5] mb-6 lg:text-base text-xs leading-relaxed">
                   {selectedProject.description}
                 </p>
                 <div className="flex flex-wrap gap-2 mb-6">
                   {selectedProject.tags.map((tag, index) => (
-                    <span
-                      key={index}
-                      className="bg-[#251f38] text-xs font-semibold text-purple-500 rounded-full px-2 py-1"
-                    >
+                    <span key={index} className="chip">
                       {tag}
                     </span>
                   ))}
@@ -106,7 +120,7 @@ const Work = () => {
                     href={selectedProject.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-1/2 bg-gray-800 hover:bg-purple-800 text-gray-400 lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className="w-1/2 btn-outline lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm"
                   >
                     Code
                   </a>
@@ -117,16 +131,16 @@ const Work = () => {
                     onClick={(e) => {
                       if (!selectedProject.webapp) {
                         e.preventDefault();
-                        toast("🚀 Demo will be added shortly!", {
+                        toast("Demo will be added shortly.", {
                           style: {
-                            background: "#1f1b2e",
-                            color: "#fff",
-                            border: "1px solid #a855f7",
+                            background: "#0d2237",
+                            color: "#dce8f6",
+                            border: "1px solid rgba(245,158,11,0.35)",
                           },
                         });
                       }
                     }}
-                    className="w-1/2 bg-purple-600 hover:bg-purple-800 text-white lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm font-semibold text-center"
+                    className="w-1/2 btn-primary lg:px-6 lg:py-2 px-2 py-1 rounded-xl lg:text-xl text-sm"
                   >
                     View
                   </a>

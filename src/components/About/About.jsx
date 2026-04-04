@@ -9,7 +9,7 @@ const About = () => {
       id="about"
       className="py-4 px-[7vw] md:px-[7vw] lg:px-[20vw] font-sans mt-16 md:mt-24 lg:mt-32"
     >
-      <div className="flex flex-col-reverse md:flex-row justify-between items-center">
+      <div className="flex flex-col-reverse md:flex-row justify-between items-center gap-10 reveal-up">
         {/* Left Side */}
         <div className="md:w-1/2 text-center md:text-left mt-8 md:mt-0">
           {/* Greeting */}
@@ -21,8 +21,8 @@ const About = () => {
             Priyanshu
           </h2>
           {/* Skills Heading with Typing Effect */}
-          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#8245ec] leading-tight">
-            <span className="text-white">I am a </span>
+          <h3 className="text-xl sm:text-2xl md:text-3xl font-semibold mb-4 text-[#14b8a6] leading-tight min-h-[2.5rem]">
+            <span className="text-[#dce8f6]">I am a </span>
             <ReactTypingEffect
               text={[
                 'Android Developer',
@@ -36,12 +36,12 @@ const About = () => {
               typingDelay={500}
               eraseDelay={2000}
               cursorRenderer={(cursor) => (
-                <span className="text-[#8245ec]">{cursor}</span>
+                <span className="text-[#14b8a6]">{cursor}</span>
               )}
             />
           </h3>
           {/* About Me Paragraph */}
-          <p className="text-base sm:text-lg md:text-lg text-gray-400 mb-10 mt-8 leading-relaxed">
+          <p className="text-base sm:text-lg md:text-lg text-[#9ab2c9] mb-10 mt-8 leading-relaxed max-w-xl">
             A Software Engineer with hands-on experience in building 
             Android applications, creating and testing APIs, and working with 
             relational database systems. I focus on delivering reliable, 
@@ -53,11 +53,7 @@ const About = () => {
             href="https://ppriyanshu26.online/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-white py-3 px-8 rounded-full mt-5 text-lg font-bold transition duration-300 transform hover:scale-105"
-            style={{
-              background: 'linear-gradient(90deg, #8245ec, #a855f7)',
-              boxShadow: '0 0 2px #8245ec, 0 0 2px #8245ec, 0 0 40px #8245ec',
-            }}
+            className="btn-primary py-3 px-8 mt-2 text-base md:text-lg"
           >
             DOWNLOAD CV
           </a>
@@ -66,7 +62,7 @@ const About = () => {
         {/* Right Side */}
         <div className="md:w-1/2 flex justify-center md:justify-end">
           <Tilt
-            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-purple-700 rounded-full"
+            className="w-48 h-48 sm:w-64 sm:h-64 md:w-[30rem] md:h-[30rem] border-4 border-[#14b8a6]/70 rounded-full shadow-[0_0_80px_rgba(20,184,166,0.2)]"
             tiltMaxAngleX={20}
             tiltMaxAngleY={20}
             perspective={1000}
@@ -77,7 +73,7 @@ const About = () => {
             <img
               src={profileImage}
               alt="Priyanshu Priyam"
-              className="w-full h-full rounded-full object-cover drop-shadow-[0_10px_20px_rgba(130,69,236,0.5)]"
+              className="w-full h-full rounded-full object-cover drop-shadow-[0_14px_28px_rgba(20,184,166,0.35)]"
             />
           </Tilt>
         </div>

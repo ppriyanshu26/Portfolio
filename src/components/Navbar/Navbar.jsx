@@ -30,6 +30,34 @@ const Navbar = () => {
     return () => document.removeEventListener("click", handleClickOutside);
   }, []);
 
+  // Track currently visible section while scrolling.
+  useEffect(() => {
+    const sections = ["about", "skills", "work", "education", "contact"];
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visible?.target?.id) {
+          setActiveSection(visible.target.id);
+        }
+      },
+      {
+        root: null,
+        rootMargin: "-30% 0px -55% 0px",
+        threshold: [0.2, 0.45, 0.7],
+      }
+    );
+
+    sections.forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) observer.observe(el);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   // Smooth scroll function
   const handleMenuItemClick = (sectionId) => {
     setActiveSection(sectionId);
@@ -54,30 +82,30 @@ const Navbar = () => {
       ref={navbarRef}
       className={`fixed top-0 w-full z-50 transition duration-300 px-[7vw] md:px-[7vw] lg:px-[20vw] ${
         isScrolled
-          ? "bg-[#050414] bg-opacity-50 backdrop-blur-md shadow-md"
+          ? "bg-[#081d30]/75 backdrop-blur-xl shadow-[0_10px_30px_rgba(3,12,23,0.55)]"
           : "bg-transparent"
       }`}
     >
       <div className="text-white py-5 flex justify-between items-center">
         {/* Logo */}
         <div
-          className="text-lg font-semibold cursor-pointer"
+          className="text-lg font-semibold cursor-pointer tracking-wide"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
         >
-          <span className="text-[#8245ec]">&lt;</span>
+          <span className="text-[#14b8a6]">&lt;</span>
           <span className="text-white">Priyanshu</span>
-          <span className="text-[#8245ec]">/</span>
+          <span className="text-[#f59e0b]">/</span>
           <span className="text-white">Priyam</span>
-          <span className="text-[#8245ec]">&gt;</span>
+          <span className="text-[#14b8a6]">&gt;</span>
         </div>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex space-x-8 text-gray-300">
+        <ul className="hidden md:flex space-x-8 text-[#bdd0e4]">
           {menuItems.map((item) => (
             <li
               key={item.id}
-              className={`cursor-pointer hover:text-[#8245ec] ${
-                activeSection === item.id ? "text-[#8245ec]" : ""
+              className={`cursor-pointer transition-colors duration-200 hover:text-[#14b8a6] ${
+                activeSection === item.id ? "text-[#14b8a6]" : ""
               }`}
             >
               <button onClick={() => handleMenuItemClick(item.id)}>
@@ -90,7 +118,7 @@ const Navbar = () => {
         {/* Mobile Menu Icon */}
         <div className="md:hidden">
           <FiMenu
-            className="text-3xl text-[#8245ec] cursor-pointer"
+            className="text-3xl text-[#14b8a6] cursor-pointer"
             onClick={() => setIsOpen(!isOpen)}
           />
         </div>
@@ -98,13 +126,13 @@ const Navbar = () => {
 
       {/* Mobile Menu Items */}
       {isOpen && (
-        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 bg-[#050414] bg-opacity-50 backdrop-filter backdrop-blur-lg z-50 rounded-lg shadow-lg md:hidden">
-          <ul className="flex flex-col items-center space-y-4 py-4 text-gray-300">
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 w-4/5 glass-card z-50 rounded-2xl shadow-lg md:hidden">
+          <ul className="flex flex-col items-center space-y-4 py-4 text-[#bdd0e4]">
             {menuItems.map((item) => (
               <li
                 key={item.id}
                 className={`cursor-pointer hover:text-white ${
-                  activeSection === item.id ? "text-[#8245ec]" : ""
+                  activeSection === item.id ? "text-[#14b8a6]" : ""
                 }`}
               >
                 <button onClick={() => handleMenuItemClick(item.id)}>

@@ -1,5 +1,4 @@
 import React from "react";
-import { FaLinkedin, FaInstagram, FaGithub, FaTelegram, FaUserGraduate } from "react-icons/fa";
 
 const Footer = () => {
   // Smooth scroll function
@@ -11,10 +10,10 @@ const Footer = () => {
   };
 
   return (
-    <footer className="text-white py-8 px-[12vw] md:px-[7vw] lg:px-[20vw]">
+    <footer className="text-white py-10 px-[12vw] md:px-[7vw] lg:px-[20vw] border-t border-[#45627f]">
       <div className="container mx-auto text-center">
         {/* Name / Logo */}
-        <h2 className="text-xl font-semibold text-purple-500">
+        <h2 className="text-xl font-semibold text-[#14b8a6]">
           Priyanshu Priyam
         </h2>
 
@@ -23,55 +22,22 @@ const Footer = () => {
           {[
             { name: "About", id: "about" },
             { name: "Skills", id: "skills" },
-            { name: "Projects", id: "projects" },
+            { name: "Projects", id: "work" },
             { name: "Education", id: "education" },
             { name: "Contact", id: "contact" },
           ].map((item, index) => (
             <button
               key={index}
               onClick={() => handleScroll(item.id)}
-              className="hover:text-purple-500 text-sm sm:text-base"
+              className="hover:text-[#14b8a6] text-sm sm:text-base text-[#ccdbec] transition-colors"
             >
               {item.name}
             </button>
           ))}
         </nav>
 
-        {/* Social Media Icons - Responsive */}
-        <div className="flex flex-wrap justify-center gap-x-4 gap-y-2 mt-6">
-          {[
-            { icon: <FaGithub />, link: "https://www.github.com/ppriyanshu26" },
-            {
-              icon: <FaLinkedin />,
-              link: "https://www.linkedin.com/in/ppriyanshu26",
-            },
-            {
-              icon: <FaInstagram />,
-              link: "https://www.instagram.com/ppriyanshu26_/",
-            },
-            {
-              icon: <FaTelegram />,
-              link: "https://t.me/ppriyanshu26", // replace with your Telegram
-            },
-            {
-              icon: <FaUserGraduate />,
-              link: "https://codolio.com/profile/ppriyanshu26", // replace with your Codolio profile
-            },
-          ].map((item, index) => (
-            <a
-              key={index}
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-xl hover:text-purple-500 transition-transform transform hover:scale-110"
-            >
-              {item.icon}
-            </a>
-          ))}
-        </div>
-
         {/* Copyright Text */}
-        <p className="text-sm text-gray-400 mt-6">
+        <p className="text-sm text-[#8ea6bf] mt-6">
           © 2026 Priyanshu Priyam. All rights reserved.
         </p>
       </div>

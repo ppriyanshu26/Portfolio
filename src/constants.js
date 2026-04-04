@@ -113,7 +113,7 @@ export const projects = [
     id: 0,
     title: "CipherAuth",
     description:
-      "Architected a Flutter-based cross-platform TOTP Authenticator, integrating AES-GCM encrypted storage for enhanced security. Optimized for usability across Android and Windows, and needs minimal code changes to be optimized for iOS, macOS and Linux distros as well. Integrated a local sync feature to securely sync encrypted credentials with other devices on the same network and with the same password.",
+      "Architected a Flutter-based cross-platform TOTP Authenticator. Optimized for usability across Android and Windows. Integrated a local sync feature to securely sync encrypted credentials with other devices on the same network and with the same password.",
     image: totpAppLogo,
     tags: ["Flutter", "AES-GCM", "Hashing", "QR Generator", "QR Scanner", "Local Sync", "Cross-Platform"],
     github: "https://github.com/ppriyanshu26/CipherAuth-Flutter",
@@ -123,7 +123,7 @@ export const projects = [
     id: 1,
     title: "DocDispatch",
     description:
-      "Contributing as an Android and Backend Developer in a collaborative team for DocDispatch, an Android-based medical support platform. I worked on OTP-based authentication, scalable backend architecture, and role-based dashboards to streamline patient–provider interactions and healthcare data management.",
+      "Contributing as an Android and Backend Developer in a collaborative team for DocDispatch, an Android-based medical support platform. I worked on OTP-based authentication and role-based dashboards to streamline data management.",
     image: docAppLogo,
     tags: ["HTML", "CSS", "JavaScript", "TailwindCSS", "React JS", "ML", "Android", "API", "SQL"],
     github: "https://github.com/ppriyanshu26/DocDispatch",
@@ -140,7 +140,7 @@ export const projects = [
     webapp: "",
   },
   {
-    id: 4,
+    id: 3,
     title: "Cipher Website",
     description:
       "A simple Flask powered website for the generating ciphertext and decrypting back to plaintext using AES-GCM mechanism to ensure integrity.",
@@ -163,7 +163,7 @@ export const projects = [
     id: 5,
     title: "eCommerce Product Recommender",
     description:
-      "A modern, intelligent product recommendation system that leverages machine learning and AI to provide personalized shopping experiences. The system analyzes user behavior (views, cart additions, purchases) and uses TF-IDF-based content filtering combined with OpenAI's GPT to generate contextual, human-friendly explanations for each recommendation.",
+      "An intelligent product recommendation system that leverages machine learning and AI to provide personalized shopping experiences. The system uses TF-IDF-based content filtering combined with OpenAI's GPT to generate explanations for each recommendation.",
     image: eComLogo,
     tags: ["API", "Flask", "JSON", "MongoDB", "ReactJS", "Scikit-Learn", "OpenAI"],
     github: "https://github.com/ppriyanshu26/eCommerce-Product-Recommender",

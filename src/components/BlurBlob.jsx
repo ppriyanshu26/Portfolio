@@ -2,7 +2,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const BlurBlob = ({ position, size }) => {
+const BlurBlob = ({ position, size, color = 'rgba(130, 69, 236, 0.9)' }) => {
   // Destructure position and size with default values
   const { top, left } = position
   const { width, height } = size 
@@ -19,7 +19,8 @@ const BlurBlob = ({ position, size }) => {
       }}
     >
       <div
-        className="w-full h-full bg-purple-500 rounded-full opacity-20 blur-3xl animate-blob"
+        className="w-full h-full rounded-full opacity-20 blur-3xl animate-blob"
+        style={{ backgroundColor: color }}
       ></div>
     </div>
   );
@@ -35,6 +36,7 @@ BlurBlob.propTypes = {
     width: PropTypes.string,
     height: PropTypes.string,
   }),
+  color: PropTypes.string,
 };
 
 export default BlurBlob;
