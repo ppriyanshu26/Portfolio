@@ -24,6 +24,10 @@ import lambdaLogo from './assets/tech_logo/lambda.png';
 import stmLogo from './assets/education_logo/stm.png';
 import ggiaLogo from './assets/education_logo/ggia.png';
 import vitLogo from './assets/education_logo/vit.png';
+import neoLogo from './assets/education_logo/iamneo.png';
+import ibmLogo from './assets/education_logo/ibm.jpg';
+import iitkgpLogo from './assets/education_logo/iitkgp.png';
+import googleLogo from './assets/education_logo/google.png';
 
 // Project Section Logo's
 import totpAppLogo from './assets/work_logo/totp.png';
@@ -105,6 +109,69 @@ export const education = [
     grade: "95.2%",
     desc: "I completed my class 10 education from St. Mary's Convent Sr. Sec. School, Bhopal.",
     degree: "X Boards (CBSE)",
+  },
+];
+
+export const certifications = [
+  {
+    id: 0,
+    title: "Marketing Analytics",
+    issuer: "IIT Kharagpur (SWAYAM)",
+    issued: "May 2025",
+    credentialId: "25MG45S114280183404713551",
+    description:
+      "Learned to analyze marketing data using tools like Excel and R, covering topics such as customer segmentation, campaign analysis, and marketing mix modeling.",
+    image: iitkgpLogo,
+    tags: ["Marketing Analytics", "Customer Segmentation", "Campaign Analysis", "R", "Excel"],
+    certificateLink: "https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/110/noc25-mg45/Course/NPTEL25MG45S114280183404713551.pdf",
+  },
+  {
+    id: 1,
+    title: "Data Science",
+    issuer: "iamneo - An NIIT Venture",
+    issued: "Apr 2025",
+    credentialId: "30d27C72cN6dO70P8",
+    description:
+      "Comprehensive training in data analysis, visualization, and machine learning using Python. Covered libraries like Pandas, Matplotlib, Seaborn, and Scikit-learn.",
+    image: neoLogo,
+    tags: ["Python", "Pandas", "Data Cleaning", "Data Visualization", "Statistics", "NLP"],
+    certificateLink: "https://drive.google.com/file/d/13OnJ0YanOgAibcNiZ2WBm113PqxVS4Ie/view?usp=sharing",
+  },
+  {
+    id: 2,
+    title: "Cyber Security Analyst",
+    issuer: "IBM",
+    issued: "Apr 2025",
+    credentialId: "c193fe199bc94fb79aa6c794c9fa4cbe",
+    description:
+      "Focused on cybersecurity fundamentals with hands-on experience with tools like KALI Linux and learned to apply NIST frameworks for effective security management.",
+    image: ibmLogo,
+    tags: ["Cyber Security", "Events", "Anomaly Detection", "SOC", "KALI", "NIST"],
+    certificateLink: "https://courses.ibmcep.cognitiveclass.ai/certificates/c193fe199bc94fb79aa6c794c9fa4cbe",
+  },
+  {
+    id: 3,
+    title: "Cloud Computing",
+    issuer: "IIT Kharagpur (SWAYAM)",
+    issued: "May 2024",
+    credentialId: "24CS17S35290010730645933",
+    description:
+      "Covered core cloud computing concepts and practical skills for deploying, scaling, and managing applications in cloud environments.",
+    image: iitkgpLogo,
+    tags: ["Cloud", "Load Balancing", "Auto-scaling", "Virtualization", "AWS", "Azure"],
+    certificateLink: "https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs17/Course/NPTEL24CS17S35290010730645933.pdf",
+  },
+  {
+    id: 4,
+    title: " The Bits and Bytes of Computer Networking",
+    issuer: "Google (Coursera)",
+    issued: "Dec 2023",
+    credentialId: "S5WH7S2FUYZJ",
+    description:
+      "Learned the fundamentals of computer networking, including protocols, IP addressing, and network security, with practical insights into real-world applications.",
+    image: googleLogo,
+    tags: ["Networking", "Protocols", "IP Addressing", "Network Security"],
+    certificateLink: "https://coursera.org/share/c120239ab839b7634be8d3c9f5a4025c",
   },
 ];
 

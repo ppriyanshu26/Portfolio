@@ -32,7 +32,7 @@ const Navbar = () => {
 
   // Track currently visible section while scrolling.
   useEffect(() => {
-    const sections = ["about", "skills", "work", "education", "contact"];
+    const sections = ["about", "skills", "work", "education", "certifications", "contact"];
     const observer = new IntersectionObserver(
       (entries) => {
         const visible = entries
@@ -74,6 +74,7 @@ const Navbar = () => {
     { id: "skills", label: "Skills" },
     { id: "work", label: "Projects" },
     { id: "education", label: "Education" },
+    { id: "certifications", label: "Certifications" },
     { id: "contact", label: "Contact" }, // ✅ Added Contact
   ];
 
