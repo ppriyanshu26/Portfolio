@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { projects } from "../../constants";
+import { FiX } from "react-icons/fi";
 import toast from "react-hot-toast";
 
 const Work = () => {
@@ -87,9 +88,9 @@ const Work = () => {
               type="button"
               onClick={handleCloseModal}
               aria-label="Close project modal"
-              className="absolute top-3 right-3 z-20 h-9 w-9 rounded-full bg-[#0b2236]/90 border border-[#5f7d9c] text-[#dce8f6] hover:text-white hover:bg-[#12314a] transition-colors"
+              className="absolute right-3 top-3 h-9 w-9 rounded-full bg-[#0b2236]/80 flex items-center justify-center text-[#dce8f6]"
             >
-              X
+              <FiX />
             </button>
 
             {/* Modal Content */}

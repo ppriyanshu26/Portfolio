@@ -28,6 +28,8 @@ import neoLogo from './assets/education_logo/iamneo.png';
 import ibmLogo from './assets/education_logo/ibm.jpg';
 import iitkgpLogo from './assets/education_logo/iitkgp.png';
 import googleLogo from './assets/education_logo/google.png';
+import algoLogo from './assets/education_logo/algo.jpg';
+import microsoftLogo from './assets/education_logo/microsoft.png';
 
 // Project Section Logo's
 import totpAppLogo from './assets/work_logo/totp.png';
@@ -88,8 +90,8 @@ export const education = [
     img: vitLogo,
     school: "VIT Bhopal University, Sehore",
     date: "Oct 2022 - July 2026 (Expected)",
-    grade: "8.68 CGPA (7th Sem)",
-    desc: "Currently in my final year of B.Tech in Computer Science and Engineering at VIT, with a strong foundation in programming, software development, and core computer science concepts. My coursework covers Data Structures, Algorithms, OOPs, DBMS, Web Development, and Software Engineering, along with participation in workshops and technical events that have strengthened my practical skills.",
+    grade: "8.75 CGPA",
+    desc: "I completed my B.Tech in Computer Science and Engineering at VIT, with a strong foundation in programming, software development, and core computer science concepts. My coursework covers Data Structures, Algorithms, OOPs, DBMS, Web Development, and Software Engineering, along with participation in workshops and technical events that have strengthened my practical skills.",
     degree: "Bachelor of Technology - CSE",
   },
   {
@@ -115,10 +117,34 @@ export const education = [
 export const certifications = [
   {
     id: 0,
+    title: "Career Essentials in Cybersecurity",
+    issuer: "Microsoft (LinkedIn Learning)",
+    issued: "May 2026",
+    credentialId: "838b1d6b4003bc099c6591eeb9297600b1ba3941e57305ae6d909923beac1109",
+    description:
+      "Completed the Career Essentials in Cybersecurity, covering foundational cybersecurity concepts, and mitigation strategies to prepare for entry-level cybersecurity roles.",
+    image: microsoftLogo,
+    tags: ["Cybersecurity", "Threats", "Vulnerabilities", "Mitigation", "Security Tools"],
+    certificateLink: "https://www.linkedin.com/learning/certificates/838b1d6b4003bc099c6591eeb9297600b1ba3941e57305ae6d909923beac1109/?trk=share_certificate",
+  },
+  {
+    id: 1,
+    title: "Certificate of Completion",
+    issuer: "AlgoExpert",
+    issued: "Apr 2026",
+    credentialId: "123d590f74",
+    description:
+      "Completed the AlgoExpert Data Structures and Algorithms course, mastering 160+ coding problems across 15+ topics, with a focus on efficient algorithm design.",
+    image: algoLogo,
+    tags: ["Arrays", "Strings", "Linked Lists", "Trees", "Graphs", "Dynamic Programming"],
+    certificateLink: "https://certificate.algoexpert.io/AE-123d590f74",
+  },
+  {
+    id: 2,
     title: "Marketing Analytics",
     issuer: "IIT Kharagpur (SWAYAM)",
     issued: "May 2025",
-    credentialId: "25MG45S114280183404713551",
+    credentialId: "NPTEL25MG45S1142801834",
     description:
       "Learned to analyze marketing data using tools like Excel and R, covering topics such as customer segmentation, campaign analysis, and marketing mix modeling.",
     image: iitkgpLogo,
@@ -126,7 +152,7 @@ export const certifications = [
     certificateLink: "https://archive.nptel.ac.in/content/noc/NOC25/SEM1/Ecertificates/110/noc25-mg45/Course/NPTEL25MG45S114280183404713551.pdf",
   },
   {
-    id: 1,
+    id: 3,
     title: "Data Science",
     issuer: "iamneo - An NIIT Venture",
     issued: "Apr 2025",
@@ -138,7 +164,7 @@ export const certifications = [
     certificateLink: "https://drive.google.com/file/d/13OnJ0YanOgAibcNiZ2WBm113PqxVS4Ie/view?usp=sharing",
   },
   {
-    id: 2,
+    id: 4,
     title: "Cyber Security Analyst",
     issuer: "IBM",
     issued: "Apr 2025",
@@ -150,19 +176,19 @@ export const certifications = [
     certificateLink: "https://courses.ibmcep.cognitiveclass.ai/certificates/c193fe199bc94fb79aa6c794c9fa4cbe",
   },
   {
-    id: 3,
+    id: 5,
     title: "Cloud Computing",
     issuer: "IIT Kharagpur (SWAYAM)",
     issued: "May 2024",
-    credentialId: "24CS17S35290010730645933",
+    credentialId: "NPTEL24CS17S352900107",
     description:
-      "Covered core cloud computing concepts and practical skills for deploying, scaling, and managing applications in cloud environments.",
+      "Gained a comprehensive understanding of cloud computing concepts, including virtualization, load balancing, auto-scaling, and cloud service models (IaaS, PaaS, SaaS).",
     image: iitkgpLogo,
     tags: ["Cloud", "Load Balancing", "Auto-scaling", "Virtualization", "AWS", "Azure"],
     certificateLink: "https://archive.nptel.ac.in/content/noc/NOC24/SEM1/Ecertificates/106/noc24-cs17/Course/NPTEL24CS17S35290010730645933.pdf",
   },
   {
-    id: 4,
+    id: 6,
     title: " The Bits and Bytes of Computer Networking",
     issuer: "Google (Coursera)",
     issued: "Dec 2023",

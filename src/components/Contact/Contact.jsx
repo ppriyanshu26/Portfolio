@@ -60,7 +60,7 @@ const Contact = () => {
           },
           {
             icon: <FaTelegram />,
-            link: "https://t.me/ppriyanshu26",
+            link: "https://t.me/ppika26",
           },
           {
             icon: <FaUserGraduate />,
