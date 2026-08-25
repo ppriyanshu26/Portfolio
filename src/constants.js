@@ -89,7 +89,7 @@ export const education = [
     id: 0,
     img: vitLogo,
     school: "VIT Bhopal University, Sehore",
-    date: "Sept 2022 - July 2026 (Expected)",
+    date: "Sept 2022 - Apr 2026",
     grade: "8.75 CGPA",
     desc: "I completed my B.Tech in Computer Science and Engineering at VIT, with a strong foundation in programming, software development, and core computer science concepts. My coursework covers Data Structures, Algorithms, OOPs, DBMS, Web Development, and Software Engineering, along with participation in workshops and technical events that have strengthened my practical skills.",
     degree: "Bachelor of Technology - CSE",
