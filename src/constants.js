@@ -210,7 +210,7 @@ export const projects = [
     image: totpAppLogo,
     tags: ["Flutter", "AES-GCM", "Hashing", "QR Generator", "QR Scanner", "Local Sync", "Cross-Platform"],
     github: "https://github.com/ppriyanshu26/CipherAuth-Flutter",
-    webapp: "https://cipherauth.ppriyanshu26.online",
+    webapp: "https://cipherauth-ppriyanshu.vercel.app",
   },
   {
     id: 1,
@@ -240,7 +240,7 @@ export const projects = [
     image: cipherAppLogo,
     tags: ["HTML", "CSS", "JS", "Python", "Flask", "AES-GCM"],
     github: "https://github.com/ppriyanshu26/Cipher",
-    webapp: "https://cipher.ppriyanshu26.online",
+    webapp: "https://cipher-ppriyanshu.vercel.app",
   },
   {
     id: 4,
