@@ -10,8 +10,8 @@ Hi — I'm Priyanshu. I build production-focused Android apps, backend APIs (Fla
 
 ### 🔗 Quick Links
 
-- Website: https://ppriyanshu26.online
-- Resume: https://ppriyanshu26.online/Resume.pdf
+- Website: https://ppriyanshu.vercel.app
+- Resume: https://ppriyanshu.vercel.app/Resume.pdf
 
 ---
 
@@ -73,7 +73,7 @@ Core roles I work in: Android Developer, Data Scientist, Py-Flask Developer, Dat
 
 | Project | Type | Highlights | Tags | Source / Web |
 |---|---|---|---|---|
-| CipherAuth | Cross-platform TOTP Authenticator (Flutter) | AES-GCM encrypted credentials, local encrypted sync, QR generator & scanner | Flutter, AES-GCM, QR, Cross-Platform | [GitHub](https://github.com/ppriyanshu26/CipherAuth-Flutter) • [Store](https://apps.microsoft.com/detail/9NS2R9NTRF2Z) |
+| CipherAuth | Cross-platform Password Vault | AES-GCM encrypted credentials, local encrypted sync, QR generator & scanner | Flutter, AES-GCM, QR, Cross-Platform | [GitHub](https://github.com/ppriyanshu26/CipherAuth-Flutter) • [Store](https://play.google.com/store/apps/details?id=in.ppriyanshu.cipherauth) |
 | DocDispatch | Android + Backend (medical support) | OTP auth, role-based dashboards, Android UI/UX, backend APIs | Android, API, SQL, React, ML | [GitHub](https://github.com/ppriyanshu26/DocDispatch) |
 | Windows Autofill | Windows password manager (Python + Tkinter) | Local AES-GCM encryption, global hotkey, popup, one-click autofill | Python, Tkinter, AES-GCM | [GitHub](https://github.com/ppriyanshu26/Password) |
 | Cipher Website | Flask web app | AES-GCM encryption utilities for encrypt/decrypt with integrity checks | Flask, AES-GCM, Web | [Live](https://cipher.ppriyanshu26.online) • [GitHub](https://github.com/ppriyanshu26/Cipher) |
