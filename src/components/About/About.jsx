@@ -50,7 +50,7 @@ const About = () => {
           </p>
           {/* Resume Button */}
           <a
-            href="https://ppriyanshu26.online/Resume.pdf"
+            href="https://ppriyanshu.vercel.app/Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primary py-3 px-8 mt-2 text-base md:text-lg"

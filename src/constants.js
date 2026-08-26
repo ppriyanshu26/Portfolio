@@ -89,7 +89,7 @@ export const education = [
     id: 0,
     img: vitLogo,
     school: "VIT Bhopal University, Sehore",
-    date: "Sept 2022 - July 2026 (Expected)",
+    date: "Sept 2022 - Apr 2026",
     grade: "8.75 CGPA",
     desc: "I completed my B.Tech in Computer Science and Engineering at VIT, with a strong foundation in programming, software development, and core computer science concepts. My coursework covers Data Structures, Algorithms, OOPs, DBMS, Web Development, and Software Engineering, along with participation in workshops and technical events that have strengthened my practical skills.",
     degree: "Bachelor of Technology - CSE",
@@ -210,7 +210,7 @@ export const projects = [
     image: totpAppLogo,
     tags: ["Flutter", "AES-GCM", "Hashing", "QR Generator", "QR Scanner", "Local Sync", "Cross-Platform"],
     github: "https://github.com/ppriyanshu26/CipherAuth-Flutter",
-    webapp: "https://cipherauth.ppriyanshu26.online",
+    webapp: "https://cipherauth-ppriyanshu.vercel.app",
   },
   {
     id: 1,
@@ -240,7 +240,7 @@ export const projects = [
     image: cipherAppLogo,
     tags: ["HTML", "CSS", "JS", "Python", "Flask", "AES-GCM"],
     github: "https://github.com/ppriyanshu26/Cipher",
-    webapp: "https://cipher.ppriyanshu26.online",
+    webapp: "https://cipher-ppriyanshu.vercel.app",
   },
   {
     id: 4,
